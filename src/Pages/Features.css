@@ -1,0 +1,150 @@
+.page-banner-area {
+  padding-top: 30px;
+  position: relative;
+  z-index: 11;
+}
+
+.page-banner-image img {
+  border-radius: 20px !important;
+}
+
+.hospa-toolkit-activate .page-banner-inner {
+  padding: 50px 55px 50px 75px;
+}
+
+.page-banner-inner {
+  background-color: rgb(233, 238, 242);
+  position: relative;
+  max-width: 1410px;
+  border-radius: 20px;
+  padding: 75px 55px 75px 75px;
+  margin: -75px auto 0px;
+}
+
+.page-banner-inner .content .list {
+  display: flex;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.page-banner-inner .content .list li {
+  list-style-type: none;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.page-banner-inner .content .list li::before {
+  position: absolute;
+  content: ">";
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #444F6F;
+}
+
+.list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.page-banner-inner .content .list li a {
+  font-weight: 500;
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.page-banner-inner .content .list li:last-child {
+  margin-right: 0px;
+}
+
+.page-banner-inner .content .list li:last-child::before {
+  position: absolute;
+  content: "";
+}
+
+.page-banner-inner .content .list li {
+  list-style-type: none;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.page-banner-inner .information {
+  text-align: end;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-banner-inner .information li .phone-btn {
+  display: inline-flex;
+  padding: 5px 25px 5px 5px;
+  align-items: center;
+  border-radius: 50px;
+  background-color:white;
+}
+.page-banner-inner .information li .phone-btn .icon {
+    margin-right: 15px;
+}
+.page-banner-inner .information li .phone-btn .icon  {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #5DB996;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    transition: 0.6s;
+}
+.page-banner-inner .information li .phone-btn span {
+    font-size: 16px;
+    letter-spacing: 1.28px;
+    color: #2C7559;
+}
+.page-banner-inner .information li .phone-btn span a {
+    font-weight: 800;
+    color: #2C7559;
+    text-decoration: none;
+}
+.careers-details-desc .content .sub {
+    font-size: 12px;
+    font-weight: 700;
+    color: #00aeef;
+    display: block;
+    margin-bottom: 12px;
+    letter-spacing: 1.2px;
+}
+.careers-details-desc .content h2 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+.careers-details-desc .content {
+    margin-bottom: 50px;
+}
+.careers-details-desc h3{
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+.careers-details-desc .list {
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+@media only screen and (min-width:1600px) {
+  .page-banner-area .container-fluid {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 1920px;
+  }
+
+  .page-banner-inner {
+    max-width: 1630px;
+  }
+}
