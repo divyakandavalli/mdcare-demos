@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500 !important;
 }
 
-.medical-center-banner-area{
+.banner-backgeound {
   background-image: url(https://themes.hibootstrap.com/hospa/wp-content/uploads/2024/03/banner-bg.jpg);
   background-position: center right;
   background-size: cover;
@@ -13,20 +13,18 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background-attachment: fixed;
   padding-top: 150px;
-  padding-bottom: 280px;
+  padding-bottom: 230px;
 }
-.medical-center-banner-content {
-  max-width: 630px;
+
+.medical-center-banner-area {
+  padding: 0rem 6rem !important;
 }
-.medical-center-banner-content p {
-  margin-bottom: 0;
-  max-width: 435px;
-}
+
 .medical-center-banner-image {
   position: absolute;
-  right: 80px;
-  bottom: 55px;
+  right: 232px;
   z-index: -1;
+  top: 45px;
 }
 
 .plus-one {
@@ -77,17 +75,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   transition: 0.6s;
 }
-
-.default-btn:hover {
+.default-btn:hover{
   background-color: #00aeef;
 }
-
 .medical-center-banner-content .banner-btn {
   margin-top: 25px;
 }
-.medical-center-banner-content {
-  max-width: 630px;
-}
+
 .default-btn .fa-circle-arrow-right {
   font-size: 25px;
   position: absolute;
@@ -135,10 +129,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
-.medical-center-banner-content .banner-bottom .arrow-btn {
-  margin-left: 20px;
-}
-.medical-center-banner-content .banner-bottom .arrow-btn .fa-arrow-right {
+
+.medical-center-banner-content .banner-bottom .arrow-btn  .fa-arrow-right {
   color: #020D2B;
   font-size: 15px;
 }
@@ -403,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .services-card h3 {
   font-size: 18px;
-  font-weight: 700 !important;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
@@ -502,9 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1042px;
   margin: 0 auto 100px;
 }
-.testimonial-lft-content .image img {
-  border-radius: 20px !important;
-}
+
 .testimonial-top-content .sub {
   font-size: 12px;
   font-weight: 700;
@@ -551,13 +541,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #5DB996;
   margin-right: 10px;
 }
-
 .testimonial-rght-content .rating-box .rating b {
   font-size: 35px;
   font-weight: 900;
   color: #020D2B;
 }
-
 .testimonial-rght-content .image {
   margin-bottom: 25px;
 }
@@ -575,22 +563,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-rght-content .info-box .icon {
-  display: flex; /* flexbox to center */
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   width: 72px;
   height: 72px;
   background-color: #ffffff;
-  border-radius: 50%;
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
   transition: 0.6s;
 }
 
-.testimonial-rght-content .info-box .icon img {
-  max-width: 60%;   /* keeps it inside circle */
-  max-height: 60%;  /* scales proportionally */
-  object-fit: contain;
+.testimonial-rght-content .info-box .icon i {
+  color: #00aeef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  transition: 0.6s;
 }
-
 
 .testimonial-rght-content .info-box .title {
   margin-left: 20px;
@@ -668,12 +663,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
 .swiper-slide {
   border-radius: 20px;
   background-color: #E3E1F2;
   padding: 35px;
   margin-bottom: 25px;
 }
+
 
 .testimonial-lft-content .image {
   margin-bottom: 25px;
@@ -682,15 +680,14 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-lft-content .testimonial-card .quote {
   margin-bottom: 15px;
 }
-
-.testimonial-lft-content .testimonial-card .quote img {
+.testimonial-lft-content .testimonial-card .quote img 
+{
   height: auto;
   max-width: 100%;
   border: none;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow: none
 }
-
 .testimonial-lft-content .testimonial-card p {
   font-size: 20px;
   color: #020D2B;
@@ -702,28 +699,24 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin-top: 35px;
 }
-
 .testimonial-lft-content .testimonial-card .info img {
   max-width: 55px;
 }
-
 .testimonial-lft-content .testimonial-card .info .title {
   margin-left: 15px;
 }
-
-.testimonial-lft-content .testimonial-card .info .title h3 {
+.testimonial-lft-content .testimonial-card .info .title h3
+{
   font-size: 15px;
-  letter-spacing: 1.4px;
-  margin-bottom: 0;
-  font-weight: 600;
+    letter-spacing: 1.4px;
+    margin-bottom: 0;
+    font-weight: 600;
 }
-
 .testimonial-lft-content .testimonial-card .info .title span {
   font-size: 14px;
   display: block;
   margin-top: 8px;
 }
-
 .testimonial-lft-content  .testimonial-button {
   position: absolute;
   right: 40px;
@@ -739,12 +732,10 @@ h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
   margin-right: 10px;
 }
-
 .testimonial-lft-content  .testimonial-button li:last-child {
   margin-right: 0;
 }
-
-.testimonial-lft-content  .testimonial-button li {
+.testimonial-lft-content  .testimonial-button li   {
   display: inline-block;
   height: 45px;
   width: 45px;
@@ -756,26 +747,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   transition: 0.6s;
 }
-
-.testimonial-lft-content  .testimonial-button li:hover ,  .testimonial-lft-content  .testimonial-button li:hover {
+.testimonial-lft-content  .testimonial-button li:hover ,  .testimonial-lft-content  .testimonial-button li:hover{
   background-color: #ffffff;
 }
-
 .why-choose-us-card {
   margin-bottom: 25px;
 }
-
 .why-choose-us-card img {
   margin-bottom: 30px;
 }
-
 .why-choose-us-card h3 {
   font-size: 25px;
   margin-bottom: 15px;
   line-height: 1.4;
   max-width: 380px;
 }
-
 .why-choose-us-card p {
   margin-bottom: 20px;
   max-width: 365px;
