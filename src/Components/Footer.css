@@ -1,0 +1,162 @@
+.footer-area {
+  background-color: #020D2B;
+  position: relative;
+  border-radius: 40px 40px 0 0;
+}
+
+.single-footer-widget {
+  margin-bottom: 25px;
+}
+
+.single-footer-widget .widget-logo {
+  margin-bottom: 30px;
+}
+
+.single-footer-widget .locations {
+  margin-bottom: 30px;
+}
+
+.single-footer-widget .locations p {
+  color: #ADB1BC;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.single-footer-widget .locations p span {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.single-footer-widget .hour-info {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.single-footer-widget .hour-info li {
+  list-style-type: none;
+  color: #ADB1BC;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.single-footer-widget .hour-info li:last-child {
+  margin-bottom: 0;
+}
+
+.single-footer-widget {
+  margin-bottom: 25px;
+}
+
+.single-footer-widget h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-bottom: 30px;
+}
+
+.single-footer-widget .custom-links li a:hover {
+  color: #9588E8;
+  text-decoration: underline;
+}
+
+.single-footer-widget .custom-links {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.single-footer-widget .custom-links li {
+  list-style-type: none;
+  margin-bottom: 18px;
+}
+
+.single-footer-widget .custom-links li a {
+  color: #ADB1BC;
+  text-decoration: none;
+}
+
+.single-footer-widget .social-info {
+  margin-top: 50px;
+}
+
+.single-footer-widget .social-info span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.single-footer-widget .social-info .social {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.single-footer-widget .social-info .social li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+.single-footer-widget .social-info .social li a .fa-facebook-f , .single-footer-widget .social-info .social li a .fa-x-twitter , .single-footer-widget .social-info .social li a .fa-instagram, .single-footer-widget .social-info .social li a .fa-linkedin-in {
+    font-size: 16px;
+    color: #ADB1BC;
+    transition: 0.6s;
+}
+.copyright-area {
+    background-color: #8EC0EE;
+    text-align: center;
+    margin-top: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.copyright-area p span {
+    color: #020D2B;
+    font-weight: 500;
+}
+.copyright-area p a {
+    color: #020D2B;
+    font-weight: 500;
+    text-decoration: none;
+}
+#backtotop.active {
+    top: 98%;
+    transform: translateY(-98%);
+    opacity: 1;
+    visibility: visible;
+}
+#backtotop {
+    position: fixed;
+    top: 88%;
+    right: 30px;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background:#00aeef;
+    color: #ffffff;
+    transform: translateY(-50%);
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.9s;
+    border-radius: 50%;
+    font-size: 20px;
+}
+#backtotop:hover {
+    background:#9588E8;
+    color: #ffffff;
+}
+.single-footer-widget .hour-info li span {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media only screen and (min-width:1600px) {
+  .footer-area {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
