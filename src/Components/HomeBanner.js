@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import BlurText from "./BlurText";
+import SplitText from "./SplitText";
+import CountUp from "./CountUp";
 import "./HomeBanner.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "@mui/material";
@@ -35,7 +38,6 @@ export default function HomeBanner() {
       offset: 200, // Start animation after scrolling 200px
     });
   }, []);
-
   return (
     <>
       <section className="banner-backgeound">
@@ -43,10 +45,28 @@ export default function HomeBanner() {
           <Container fluid>
             <div className="medical-center-banner-content">
               <h1 className="title text-4xl lg:text-[60px] mb-4 leading-normal text-[#020D2B] font-[500]">
-                <b className="font-[800]">Secure, Smarter,</b> and Fully
-                Integrated Care
+                <BlurText
+                  text="Secure, Smarter"
+                  delay={80}
+                  animateBy="chars"
+                  direction="top"
+                  className="font-[800] whitespace-nowrap"
+                />
+                <SplitText
+                  text=" And Fully Integrated Care"
+                  className="block text-2xl lg:text-4xl font-[500]"
+                  delay={80}
+                  duration={0.6}
+                  ease="power3.out"
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  threshold={0.1}
+                  rootMargin="-100px"
+                  textAlign="left"
+                />
               </h1>
-              <p>
+              <p data-aos="fade-up-right">
                 With the ongoing trends in Information Technology, where change
                 is an obsession, time a limited commodity, and quality the
                 hallmark of every business, Vision Infonet Inc has created its
@@ -65,7 +85,7 @@ export default function HomeBanner() {
                 </Link>
               </div>
 
-              <div className="banner-bottom">
+              <div className="banner-bottom" data-aos="fade-right">
                 <div className="info">
                   <div className="icon">
                     <FontAwesomeIcon icon={faCircleExclamation} />
@@ -247,7 +267,15 @@ export default function HomeBanner() {
                   <div className="counter-wrap">
                     <div className="item">
                       <div className="d-flex align-items-center justify-content-center">
-                        <h3 className="counter">22</h3>
+                        {/* <h3 className="counter">22</h3> */}
+                        <CountUp
+                          from={0}
+                          to={22}
+                          separator=","
+                          direction="up"
+                          duration={1}
+                          className="count-up-text text-[35px] font-bold text-[#0f0f52] counter"
+                        />
                       </div>
                       <p>
                         DIFFERENT <span>SECTIONS</span>
@@ -257,7 +285,14 @@ export default function HomeBanner() {
                   <div className="counter-wrap wrap-two">
                     <div className="item">
                       <div className="d-flex align-items-center justify-content-center">
-                        <h3 className="counter">5</h3>
+                        <CountUp
+                          from={0}
+                          to={5}
+                          separator=","
+                          direction="up"
+                          duration={1}
+                          className="count-up-text text-[35px] font-black text-[#0f0f52]"
+                        />
                         <h3 className="sub">K+</h3>
                       </div>
                       <p>

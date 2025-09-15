@@ -7,10 +7,11 @@ import Logo from '../assets/Images/logo.png';
 import './Header.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import RequestDemoModal from "./RequestDemoModal";
 function Header() {
   const [isSticky, setIsSticky] = useState(false);
 
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -34,7 +35,7 @@ function Header() {
           <p className="m-0 text-center">
            Next-Gen EHR and Billing — Built for Healthcare Providers.
           </p>
-          <button>Request Free Trial</button>
+          <button onClick={() => setShowModal(true)}>Request Free Trial</button>
         </div>
         <Navbar expand="xl" className={`navbar ${isSticky ? 'is-sticky' : ''}`}>
           <Container fluid>
@@ -75,13 +76,14 @@ function Header() {
                   <Nav.Link as={Link} to="/portal" className="mx-4">
                     Portal
                   </Nav.Link>
-                  <button>Live Demo</button>
+                  <button onClick={() => setShowModal(true)}>Live Demo</button>
                 </Nav>
               </div>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </header>
+       <RequestDemoModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </>
   );
 }

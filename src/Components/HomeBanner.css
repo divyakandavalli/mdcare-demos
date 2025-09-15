@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .medical-center-banner-content p {
   margin-bottom: 0;
-  max-width: 435px;
+  /* max-width: 435px; */
 }
 .medical-center-banner-image {
   position: absolute;
