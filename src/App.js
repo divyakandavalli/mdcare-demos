@@ -1,22 +1,21 @@
-import './App.css';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import Features from './Pages/Features';
-import Home from './Pages/Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { Routes , Route } from "react-router-dom";
+import "./App.css";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Home from "./Pages/Home";
+import AboutPage from "./Pages/about";
+import Specialization from "./Pages/specilization";
 function App() {
   return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<Features />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage/>} />
+        <Route path="/specificatins" element={<Specialization />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

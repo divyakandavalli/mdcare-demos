@@ -102,3 +102,38 @@
     color:#9588E8 !important;
   }
 }
+rect{
+  fill:#E1E6EB !important ;
+}
+/* 
+.second-nav .nav-link {
+  padding: 0 .5em .25em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.second-nav .nav-link:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0; 
+  background: #ce4f20; 
+  scale: 0 1;
+  transition: .3s, translate 0s .3s;
+}
+.second-nav:hover .nav-link:before {
+  scale: 1;
+}
+.second-nav .nav-link:hover:before {
+  translate: 0;
+  transition: .3s;
+}
+.second-nav:hover .nav-link:has(~ .nav-link:hover):before {
+  translate: 100% 0;
+  transition: .2s .2s,scale 0s .4s;
+}
+.second-nav:hover .nav-link:hover ~ .nav-link:before {
+  translate: -100% 0;
+  transition: .2s .2s,scale 0s .4s;
+} */
