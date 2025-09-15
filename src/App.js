@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import AboutPage from "./Pages/about";
 import Specialization from "./Pages/specilization";
+import Features from './Pages/Features';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/specificatins" element={<Specialization />} />
+          <Route path="/features" element={<Features />} />
       </Routes>
       <Footer />
     </>

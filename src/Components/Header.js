@@ -21,10 +21,10 @@ function Header() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -33,53 +33,47 @@ function Header() {
       <header>
         <div className="bg-[#8ec0ee] d-flex justify-between align-items-center lg:px-24 text-[#292966] top-nav">
           <p className="m-0 text-center">
-            Learn what to expect when visiting the Emergency Department. Learn
-            More
+           Next-Gen EHR and Billing — Built for Healthcare Providers.
           </p>
           <button onClick={() => setShowModal(true)}>Request Free Trial</button>
         </div>
-        <Navbar expand="lg" className={`navbar ${isSticky ? "is-sticky" : ""}`}>
+        <Navbar expand="xl" className={`navbar ${isSticky ? 'is-sticky' : ''}`}>
           <Container fluid>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand as={Link} to="/">
               <Image src={Logo} alt="MDCare" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <div className="d-block mx-auto">
                 <Nav className="ms-auto first-nav justify-content-end">
-                  <Nav.Link href="#link" className="mr-10">
+                  <Nav.Link as={Link} to="/meaningful-use" className="mr-10">
                     Meaningful Use
                   </Nav.Link>
-                  <Nav.Link href="#home" className="mr-10">
+                  <Nav.Link as={Link} to="/resources" className="mr-10">
                     Resources
                   </Nav.Link>
-                  <Nav.Link href="#link" className="mr-10">
+                  <Nav.Link as={Link} to="/contact" className="mr-10">
                     Contact Us
                   </Nav.Link>
                 </Nav>
                 <div className="nav-border"></div>
                 <Nav className="second-nav">
-                  <Link to="/" className="nav-link sm:mx-4">
+                  <Nav.Link as={Link} to="/" className="mx-4">
                     Home
-                  </Link>
-
-                  <Link to="/about" className="nav-link sm:mx-4">
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/about" className="mx-4">
                     About Us
-                  </Link>
-
-                  <Link to="/features" className="sm:mx-4 nav-link">
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/features" className="mx-4">
                     Features
-                  </Link>
-
-                  <Link to="/specificatins" className="sm:mx-4 nav-link">
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/specialities" className="mx-4">
                     Specialities
-                  </Link>
-
-                  <Link to="/roi" className="nav-link sm:mx-4">
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/roi" className="mx-4">
                     ROI
-                  </Link>
-
-                  <Link to="/portal" className="nav-link sm:mx-4">
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/portal" className="mx-4">
                     Portal
                   </Nav.Link>
                   <button onClick={() => setShowModal(true)}>Live Demo</button>
