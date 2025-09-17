@@ -30,8 +30,8 @@ function Header() {
 
   return (
     <>
-      <header>
-        <div className="bg-[#8ec0ee] d-flex justify-between align-items-center lg:px-24 text-[#292966] top-nav">
+      <header className='font-roboto'>
+        <div className="bg-[#8ec0ee] d-flex justify-between align-items-center lg:px-24 text-[#292966] top-nav ">
           <p className="m-0 text-center">
            Next-Gen EHR and Billing — Built for Healthcare Providers.
           </p>

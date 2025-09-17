@@ -37,7 +37,7 @@ export default function Footer() {
   return (
     <div>
       <section>
-        <footer className='footer-area pt-[100px]'>
+        <footer className='footer-area pt-[100px] font-roboto'>
           <Container>
             <Row className='justify-content-center'>
               <Col xl={3} md={12}>
@@ -188,7 +188,7 @@ export default function Footer() {
         <button
           type='button'
           id='backtotop'
-          className={`position-fixed text-center border-0 p-0 ${showBackToTop ? 'active' : ''}`}
+          className={`position-fixed font-roboto text-center border-0 p-0 ${showBackToTop ? 'active' : ''}`}
           onClick={scrollToTop}
         >
           <FontAwesomeIcon icon={faArrowUp} />

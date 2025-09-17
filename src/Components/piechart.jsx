@@ -22,6 +22,7 @@ const PieChart = () => {
     legend: "none", // Removes legend
     colors: ["#BE01EB", "#35A853", "#4187D6", "#F7AA01", "#DFF401", "#78a54d"],
     chartArea: { width: "80%", height: "80%" }, // Improves spacing
+      backgroundColor: "transparent",
   };
 
   return (

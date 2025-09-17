@@ -40,7 +40,7 @@ export default function HomeBanner() {
   }, []);
   return (
     <>
-      <section className="banner-backgeound">
+      <section className="banner-backgeound font-roboto">
         <section className="medical-center-banner-area">
           <Container fluid>
             <div className="medical-center-banner-content">
@@ -91,7 +91,7 @@ export default function HomeBanner() {
                     <FontAwesomeIcon icon={faCircleExclamation} />
                   </div>
 
-                  <div className="title">
+                  <div className="title font-roboto">
                     <h5>Request Free Trial</h5>
                     <span>
                       Use MDCare EMR for 6 months absolutely free! for more
@@ -131,7 +131,7 @@ export default function HomeBanner() {
           </div>
         </section>
       </section>
-      <section className="features-area">
+      <section className="features-area font-roboto">
         <Container fluid>
           <div className="features-inner-area" data-aos="fade-up">
             <Row className="justify-center">
@@ -191,7 +191,7 @@ export default function HomeBanner() {
         </Container>
       </section>
       <section>
-        <div className="about-area py-[100px]">
+        <div className="about-area py-[100px] font-roboto">
           <Container>
             <Row className="justify-content-center align-items-center">
               <Col xl={6} md={12}>
@@ -307,7 +307,7 @@ export default function HomeBanner() {
         </div>
       </section>
       <section>
-        <div className="services-area lg:py-[100px] py-[50px]">
+        <div className="services-area lg:py-[100px] py-[50px] font-roboto">
           <Container>
             <div className="section-title">
               <span className="sub">Our Specialties</span>
@@ -509,7 +509,7 @@ export default function HomeBanner() {
         </div>
       </section>
       <section>
-        <div className="testimonial-area lg:py-[100px] py-[50px]">
+        <div className="testimonial-area lg:py-[100px] py-[50px] font-roboto">
           <Container>
             <div className="testimonial-top-content">
               <span className="sub">YOUR HEALTH IS OUR TOP PRIORITY</span>
@@ -712,7 +712,7 @@ export default function HomeBanner() {
         </div>
       </section>
       <section>
-        <div className="why-choose-us-area py-[75px]">
+        <div className="why-choose-us-area py-[75px] font-roboto">
           <Container>
             <div className="section-title">
               <span class="sub">WHY CHOOSE MDCARE </span>
